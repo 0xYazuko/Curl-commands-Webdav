@@ -31,3 +31,9 @@ curl -X DELETE 'https://example.com/webdav/test.html'
 ```shell
 curl -X MOVE --header 'Destination:http://example.org/new.txt' 'https://example.com/old.txt'
 ```
+
+## Création d'un nouveau dossier sur le serveur Webdav :
+> Pour créer un nouveau répertoire sur le serveur webdav, utilisez la requête -X MKCOL :
+```shell
+curl -X MKCOL 'https://exemple.com/new_folder'
+```
