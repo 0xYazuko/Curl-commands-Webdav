@@ -37,3 +37,11 @@ curl -X MOVE --header 'Destination:http://example.org/new.txt' 'https://example.
 ```shell
 curl -X MKCOL 'https://exemple.com/new_folder'
 ```
+
+## Télécharger le fichier sur le serveur Webdav :
+> Pour télécharger un fichier sur le serveur webdav, utilisez la requête PUT. Disons que le fichier src est /path/to/local/deface.txt et que nous voulons le télécharger dans le dossier de test sur le serveur webdav, donc notre commande serait :
+```shell
+curl -T '/path/to/local/deface.txt' 'https://example.com/test/'
+```
+
+
